@@ -1,3 +1,18 @@
-email=116303
-address=beijing
-author=hxr123
+spring:
+ profiles:
+  active:
+  - dev
+
+---
+spring:
+ profiles: dev
+ application:
+   name: microservicecloud-config-hxr-dev
+   
+---
+spring:
+ profiles: test
+ application:
+   name: microservicecloud-config-hxr-test
+   
+   
